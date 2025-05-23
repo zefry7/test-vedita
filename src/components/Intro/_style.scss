@@ -1,0 +1,119 @@
+.intro {
+
+    &__content {
+        margin: 0 auto;
+        max-width: 1920px;
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+
+    &__info {
+        margin-top: 208px;
+        margin-left: 361px;
+        width: 430px;
+    }
+
+    &__title {
+        font-family: "RR";
+        margin-bottom: 18px;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: white;
+
+        span {
+            font-size: 64px;
+            line-height: 64px;
+            font-family: "REB";
+        }
+
+        &-white {
+            font-size: 64px;
+            line-height: 64px;
+            color: white;
+
+            &:last-of-type {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+
+        &-green {
+            color: #6CB71D;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        font-family: "RB";
+        height: 44px;
+        width: 175px;
+        line-height: 44px;
+        border-radius: 10px;
+        background-color: #6CB71D;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover, &:visited {
+            color: white;
+        }
+
+        &:active {
+            transition: all 0.1s linear;
+            transform: scale(0.9);
+        }
+    }
+
+    .swiper {
+        height: 700px;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        background: url(/public/img/intro-bg.jpg) 99% center/ cover;
+        background-attachment: fixed;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        z-index: 2;
+        top: 311px;
+        left: 80px;
+        cursor: pointer;
+    }
+    
+    .swiper-button-next {
+        position: absolute;
+        z-index: 2;
+        top: 311px;
+        right: 80px;
+        transform: rotateZ(180deg);
+        transform-origin: 50%;
+        cursor: pointer;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        z-index: 2;
+        left: 920px;
+        bottom: 50px;
+        display: flex;
+        gap: 13px;
+    }
+
+    .swiper-pagination-bullet {
+        display: inline-block;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        border: 2px solid white;
+
+        &-active {
+            background-color: white;
+        }
+    }
+}
+

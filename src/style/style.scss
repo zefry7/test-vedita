@@ -1,0 +1,40 @@
+@import "./_null-style.scss";
+@import "../../public/font/fonts";
+@import "../components/header/style";
+@import "../components/Intro/style";
+@import "../components/Advantage/style";
+@import "../components/Diet/style";
+@import "../components/About/style";
+@import "../components/Delivery/style";
+@import "../components/Footer/style";
+@import "../utils/FormDelivery/style";
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    scrollbar-gutter: stable;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    scrollbar-gutter: stable;
+    overflow-x: hidden;
+}
+
+#root {
+    position: relative;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 142px 1fr 258px;
+}
+
+p, span, button, a, li, label {
+    font-family: "RR";
+    font-size: 16px;
+    color: #333333;
+}
+
+
+

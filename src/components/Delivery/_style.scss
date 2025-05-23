@@ -1,0 +1,53 @@
+.delivery {
+
+    &__content {
+        margin: 0 auto 140px;
+        max-width: 1182px;
+        width: 100%;
+        display: flex;
+        gap: 94px;
+        border: 1px solid #E4E4E4;
+        border-radius: 14px;
+    }
+    &__info {
+        width: 507px;
+        padding: 107px 0 90px 70px;
+    }
+    &__title {
+        margin-bottom: 42px;
+        font-family: "RB";
+        font-size: 30px;
+        line-height: 23px;
+        letter-spacing: 3%;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    &__text {
+        margin-bottom: 31px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #333333;
+
+        &:first-of-type {
+            margin-bottom: 1ch;
+        }
+    }
+
+    &__button {
+        font-family: "RB";
+        height: 35px;
+        width: 181px;
+        border-radius: 10px;
+        background-color: #6CB71D;
+        color: white;
+    }
+    &__map {
+        flex: 1;
+        width: 582px;
+    }
+
+    .ymaps-2-1-79-map {
+        width: 582px !important;
+        height: 466px !important;
+    }
+}
