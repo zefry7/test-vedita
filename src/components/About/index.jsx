@@ -9,7 +9,7 @@ export default function About() {
       <div className="about__content">
         <div className="about__img">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={"auto"}
             modules={[Navigation, Pagination, Autoplay]}
             navigation={{
               nextEl: ".swiper-button-next",

@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+
 const data = [
   {
     text: "Используем только натуральные продукты, блюда без консервантов и искусственных добавок.",
@@ -21,16 +26,38 @@ function Advantage() {
   return (
     <section className="advantage">
       <div className="advantage__content">
-        {data.map((v, i) => (
-          <div className="advantage__item" key={i}>
-            <img
-              src={v.img}
-              alt="Элемент оформления"
-              className="advantage__item-img"
-            />
-            <p className="advantage__item-text">{v.text}</p>
-          </div>
-        ))}
+        <Swiper
+          modules={[Navigation, Pagination]}
+          breakpoints={{
+            320: {
+              slidesPerView: 1
+            },
+            620: {
+              slidesPerView: 2
+            },
+            1025: {
+              slidesPerView: "auto",
+            },
+          }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
+        >
+          {data.map((v, i) => (
+            <SwiperSlide key={i}>
+              <div className="advantage__item">
+                <img
+                  src={v.img}
+                  alt="Элемент оформления"
+                  className="advantage__item-img"
+                />
+                <p className="advantage__item-text">{v.text}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

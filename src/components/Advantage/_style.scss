@@ -1,32 +1,26 @@
 .advantage {
     &__content {
-        padding: 90px 0 105px;
+        padding: 90px 20px 105px;
         display: flex;
         justify-content: space-between;
-        max-width: 1182px;
+        max-width: 1202px;
         margin: 0 auto;
+        width: 100vw;
+
+        @media (max-width: 1024px) {
+            padding: 50px 20px 70px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 50px 20px;
+        }
     }
     &__item {
+        max-width: 262px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 18px;
-
-        &:nth-child(1) {
-            width: 226px;
-        }
-
-        &:nth-child(2) {
-            width: 212px;
-        }
-
-        &:nth-child(3) {
-            width: 262px;
-        }
-
-        &:nth-child(4) {
-            width: 247px;
-        }
     }
     &__item-img {
         height: 91px;
@@ -35,5 +29,34 @@
     &__item-text {
         text-align: center;
         line-height: 21px;
+    }
+
+    .swiper {
+        width: 100%;
+
+        &-wrapper {
+            justify-content: space-between;
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: center;
+
+            &:nth-child(1) {
+                width: 226px;
+            }
+
+            &:nth-child(2) {
+                width: 212px;
+            }
+
+            &:nth-child(3) {
+                width: 262px;
+            }
+
+            &:nth-child(4) {
+                width: 247px;
+            }
+        }
     }
 }

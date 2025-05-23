@@ -10,15 +10,15 @@ function Page() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
-        <Intro />
+        {/* <Intro /> */}
         <Advantage />
-        <Diet />
+        {/* <Diet /> */}
         <About />
-        <Delivery />
+        {/* <Delivery /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
