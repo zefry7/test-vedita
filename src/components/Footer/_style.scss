@@ -12,6 +12,12 @@
         width: 100%;
         margin: 0 auto;
 
+        &:first-of-type {
+            @media (max-width:425px) {
+                flex-direction: column;
+            }
+        }
+
         &:last-of-type {
             padding-top: 22px;
         }

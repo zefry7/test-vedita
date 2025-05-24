@@ -64,6 +64,12 @@
             border-radius: 10px;
             background-color: #6CB71D;
             color: white;
+
+            @media (max-width: 425px) {
+                width: 170px;
+                height: 44px;
+                font-size: 20px;
+            }            
         }
     }
 

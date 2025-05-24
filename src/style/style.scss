@@ -10,9 +10,16 @@
 @import "../utils/FormDelivery/style";
 
 html {
+    min-width: 320px;
     scroll-behavior: smooth;
+    scroll-snap-stop: always;
+    scroll-padding-top: 142px;
     width: 100%;
     scrollbar-gutter: stable;
+
+    @media (max-width: 660px) {
+        scroll-padding-top: 76px;
+    }
 }
 
 body {
@@ -26,9 +33,13 @@ body {
 #root {
     position: relative;
     display: grid;
-    height: 100%;
     width: 100%;
-    grid-template-rows: 142px 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 142px;
+
+    @media (max-width: 660px) {
+        padding-top: 76px;
+    }
 }
 
 p, span, button, a, li, label {
@@ -37,5 +48,9 @@ p, span, button, a, li, label {
     color: #333333;
 }
 
+
+.lock-root {
+    overflow: hidden;
+}
 
 

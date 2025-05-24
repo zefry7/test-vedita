@@ -10,7 +10,7 @@ function Page() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         <Intro />
         <Advantage />
@@ -18,7 +18,7 @@ function Page() {
         <About />
         <Delivery />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
