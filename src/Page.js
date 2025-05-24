@@ -16,7 +16,7 @@ function Page() {
         <Advantage />
         {/* <Diet /> */}
         <About />
-        {/* <Delivery /> */}
+        <Delivery />
       </main>
       {/* <Footer /> */}
     </>

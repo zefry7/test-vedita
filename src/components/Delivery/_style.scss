@@ -4,23 +4,55 @@
         margin: 0 auto 140px;
         max-width: 1182px;
         width: 100%;
+        height: 466px;
         display: flex;
-        gap: 94px;
+        gap: 90px;
         border: 1px solid #E4E4E4;
         border-radius: 14px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            height: auto;
+            gap: 0;
+            border-right: none;
+            border-left: none;
+            border-radius: 0;
+        }
     }
     &__info {
         width: 507px;
         padding: 107px 0 90px 70px;
+
+        @media (max-width: 1024px) {
+            margin: 0 auto;
+            width: 600px;
+            padding: 70px 70px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 425px) {
+            padding: 40px 20px;
+            align-items: start;
+        }
     }
     &__title {
         margin-bottom: 42px;
         font-family: "RB";
         font-size: 30px;
-        line-height: 23px;
+        line-height: 30px;
         letter-spacing: 3%;
         text-transform: uppercase;
         color: #333333;
+
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
     }
     &__text {
         margin-bottom: 31px;
@@ -31,6 +63,14 @@
         &:first-of-type {
             margin-bottom: 1ch;
         }
+
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+
+        @media (max-width: 425px) {
+            text-align: left;
+        }
     }
 
     &__button {
@@ -40,14 +80,39 @@
         border-radius: 10px;
         background-color: #6CB71D;
         color: white;
+
+        @media (max-width: 425px) {
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
     }
     &__map {
         flex: 1;
         width: 582px;
-    }
+        border-left: 1px solid #E4E4E4;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
 
-    .ymaps-2-1-79-map {
-        width: 582px !important;
-        height: 466px !important;
+        @media (max-width: 1024px) {
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        & > div {
+            width: 582px !important;
+            height: 464px !important;
+
+            @media (max-width: 1024px) {
+                min-width: 320px;
+                width: 100vw !important;
+                height: 400px !important;
+            }
+
+            @media (max-width: 425px) {
+                height: 320px !important;
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 .about {
     &__content {
-        padding: 0 20px 92px;
-        max-width: 1202px;
+        padding: 0 0px 92px;
+        max-width: 1182px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -11,6 +11,7 @@
             flex-direction: column-reverse;
             gap: 20px;
             align-items: center;
+            padding: 0 20px 50px;
         }
     }
     &__img {

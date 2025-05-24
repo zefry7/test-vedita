@@ -47,7 +47,7 @@ export default function FormDelivery({ cancel }) {
               </button>
               <p className="form-delivery__text">
                 Нажимая на кнопку, вы соглашаетесь на обработку
-                <span>персональных данных</span>
+                <span> персональных данных</span>
               </p>
             </>
           )}

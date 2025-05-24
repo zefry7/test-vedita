@@ -28,7 +28,7 @@ body {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-rows: 142px 1fr 258px;
+    grid-template-rows: 142px 1fr auto;
 }
 
 p, span, button, a, li, label {
