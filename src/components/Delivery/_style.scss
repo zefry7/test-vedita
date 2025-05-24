@@ -3,7 +3,8 @@
     &__content {
         margin: 0 auto 140px;
         max-width: 1182px;
-        width: 100%;
+        min-width: 320px;
+        width: 100vw;
         height: 466px;
         display: flex;
         gap: 90px;

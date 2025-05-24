@@ -14,10 +14,10 @@ export default function Intro() {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{ clickable: true }}
         >
           <SwiperSlide>

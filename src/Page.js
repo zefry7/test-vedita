@@ -12,9 +12,9 @@ function Page() {
     <>
       {/* <Header /> */}
       <main>
-        {/* <Intro /> */}
+        <Intro />
         <Advantage />
-        {/* <Diet /> */}
+        <Diet />
         <About />
         <Delivery />
       </main>

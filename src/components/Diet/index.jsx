@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+
 const data = [
   {
     img: "img/dish-1.jpg",
@@ -38,9 +43,18 @@ export default function Diet() {
     <section className="diet">
       <div className="diet__content">
         <h2 className="diet__title">Рационы</h2>
-        <div className="diet__list">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          slidesPerView="auto"
+          spaceBetween={21}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
+        >
           {data.map((v, i) => (
-            <div className="diet__item" key={i}>
+            <SwiperSlide key={i}>
               <div className="diet__item-img">
                 <img src={v.img} alt="Блюдо" />
               </div>
@@ -51,9 +65,9 @@ export default function Diet() {
                 <span className="diet__item-price">{v.price}</span>
                 <button className="diet__item-button">Выбрать</button>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
